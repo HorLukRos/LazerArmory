@@ -1,9 +1,0 @@
-## Interface: 30400
-## Title: Lazer Kittens' Armory
-## Notes: Uploads current gear to a guild web page. Needs a client app.
-## Author: HorLukRos (Neo)
-## Version: 0.5.0
-## SavedVariablesPerCharacter: LazerArmoryGear
-## SavedVariables: LazerArmoryPing
-
-LazerArmory.lua
