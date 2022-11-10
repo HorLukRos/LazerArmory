@@ -1,0 +1,26 @@
+﻿<Window x:Class="LazerArmory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LazerArmory"
+        mc:Ignorable="d"
+        ShowInTaskbar="False"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="#2d2d30"
+        Foreground="White"
+        Initialized="Window_Initialized"
+        Loaded="Window_Loaded"
+        Topmost="True"
+        Deactivated="Window_Deactivated"
+        Closing="Window_Closing"
+        Title="Lazer Kittens' Armory" Height="200" Width="400">
+    <Grid>
+        <Image Source="/Resources/lk_black.png" Height="270" Opacity="0.25" />
+        <Label Foreground="White" FontSize="18">Lazer Kittens' Armory</Label>
+        <Label Foreground="White" Name="mainText" FontSize="32" VerticalAlignment="Center" Margin="0 0 0 0" HorizontalAlignment="Center">✓ Synchronized</Label>
+        <Button Style="{StaticResource NiceButton}"  HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" Click="Button_Click">Options...</Button>
+        <Button Style="{StaticResource NiceButton}" Name="charButton" d:Visibility="Visible" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="5" Click="charButton_Click">Show character: Unknown</Button>
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="LazerArmory.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LazerArmory"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Title="Lazer Kittens' Armory" Height="400" Width="400">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0 0 0 48">
+            <StackPanel Orientation="Vertical" Margin="30 20">
+                <Label FontWeight="Bold" Margin="-10 0 0 0">Main settings</Label>
+                <CheckBox Name="autoStart" Click="autoStart_Click">Automatically start with Windows</CheckBox>
+                <Label Margin="0 5 0 0">WoW path</Label>
+                <TextBox Name="path" TextChanged="path_TextChanged" />
+                <Label FontWeight="Bold" Margin="-10 0 0 0">Characters</Label>
+                <StackPanel Orientation="Vertical" Name="characters">
+                    
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="30 5" Margin="5" Click="Button_Click" Width="100" Height="37">OK</Button>
+        <Label Content="version 0.0.0" Opacity="0.5" HorizontalAlignment="Center" VerticalAlignment="Bottom" Name="version"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5" Padding="3 0" Click="Button_Click_1" Width="100">Shutdown app</Button>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5 5 5 25" Padding="3 0" Click="Button_Click_2" Width="100">Check updates</Button>
+    </Grid>
+</Window>
